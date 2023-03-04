@@ -1,0 +1,52 @@
+.summary{
+    height: 60vh;
+    display: grid;
+    padding: 25px;
+    gap: 30px;
+}
+
+.summary h2{
+    color: $DarkGrayBlue;
+
+}
+
+.stat{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+    border-radius: 10px;
+    gap: 15px;
+}
+
+.stat h3:last-child{
+    flex-grow: 1;
+    text-align: end;
+    
+}
+
+.stat span{
+    color: $DarkGrayBlue;
+}
+
+.reaction-container{
+    background-color: hsl(0  100% 67% / .1);
+    color: $LightRed;
+}
+
+.memory-container{
+    color: $OrangeyYellow;
+    background-color: hsl(39 100% 56% /.1);
+}
+
+.verbal-container{
+    color: $GreenTeal;
+    background-color: hsl(166  100% 37% /.1);
+    
+}
+
+.visual-container{
+    color: $CobaltBlue;
+    background-color: hsl(234 85% 45% / .1);
+
+}

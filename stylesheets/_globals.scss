@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @include fuente(500);
+}
+
+.main-container {
+  width: fit-content;
+  height: 100vh;
+}
+
+@media (min-width: 768px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+h1 {
+  color: $White;
+}

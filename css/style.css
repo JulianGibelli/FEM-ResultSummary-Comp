@@ -1,0 +1,125 @@
+/* Primary */
+/* Neutral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
+}
+
+.main-container {
+  width: fit-content;
+  height: 100vh;
+}
+
+@media (min-width: 768px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+h1 {
+  color: hsl(0, 0%, 100%);
+}
+
+.result-graph {
+  height: 40vh;
+  background-color: hsl(234, 85%, 45%);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.button {
+  min-height: 15vh;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border-style: none;
+  background: linear-gradient(1800deg, hsla(241, 72%, 46%, 0), hsl(256, 72%, 46%));
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  color: hsl(0, 0%, 100%);
+  padding: 20px;
+}
+
+.button span {
+  font-size: 14px;
+  color: hsl(241, 100%, 89%);
+  display: block;
+  margin-bottom: 1em;
+}
+
+.result-graph p,
+h2 {
+  color: hsl(241, 100%, 89%);
+}
+
+.result-graph h2 {
+  font-size: 20px;
+}
+
+.result-graph p {
+  width: 70%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.summary {
+  height: 60vh;
+  display: grid;
+  padding: 25px;
+  gap: 30px;
+}
+
+.summary h2 {
+  color: hsl(224, 30%, 27%);
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15px;
+  border-radius: 10px;
+  gap: 15px;
+}
+
+.stat h3:last-child {
+  flex-grow: 1;
+  text-align: end;
+}
+
+.stat span {
+  color: hsl(224, 30%, 27%);
+}
+
+.reaction-container {
+  background-color: hsla(0, 100%, 67%, 0.1);
+  color: hsl(0, 100%, 67%);
+}
+
+.memory-container {
+  color: hsl(39, 100%, 56%);
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.verbal-container {
+  color: hsl(166, 100%, 37%);
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.visual-container {
+  color: hsl(234, 85%, 45%);
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+/*# sourceMappingURL=style.css.map */
