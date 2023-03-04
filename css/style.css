@@ -14,12 +14,22 @@ body {
 .main-container {
   width: fit-content;
   height: 100vh;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
   .main-container {
+    height: auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(400px, 1fr));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    box-shadow: 10px 10px 69px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 69px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 69px 0px rgba(0, 0, 0, 0.75);
   }
 }
 h1 {
@@ -38,6 +48,12 @@ h1 {
   background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
+@media (min-width: 768px) {
+  .result-graph {
+    height: 100%;
+    border-radius: 30px;
+  }
+}
 .button {
   min-height: 15vh;
   aspect-ratio: 1/1;
@@ -51,6 +67,11 @@ h1 {
   padding: 20px;
 }
 
+@media (min-width: 768px) {
+  .button {
+    min-height: 25vh;
+  }
+}
 .button span {
   font-size: 14px;
   color: hsl(241, 100%, 89%);
@@ -73,10 +94,16 @@ h2 {
   margin-bottom: 20px;
 }
 
+@media (min-width: 768px) {
+  .result-graph p {
+    width: 50%;
+    margin-bottom: initial;
+  }
+}
 .summary {
   height: 60vh;
   display: grid;
-  padding: 25px;
+  padding: 35px;
   gap: 30px;
 }
 
@@ -84,6 +111,14 @@ h2 {
   color: hsl(224, 30%, 27%);
 }
 
+@media (min-width: 768px) {
+  .summary {
+    gap: 15px;
+  }
+  .summary h2 {
+    margin-top: 20px;
+  }
+}
 .stat {
   display: flex;
   align-items: center;
@@ -120,6 +155,17 @@ h2 {
 .visual-container {
   color: hsl(234, 85%, 45%);
   background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.continue-button {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 700;
+  padding: 15px;
+  border-radius: 25px;
+  border-style: none;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */

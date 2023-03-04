@@ -9,6 +9,13 @@
     justify-content: space-evenly;
     background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   }
+
+  @media (min-width:768px){
+    .result-graph{
+      height: 100%;
+      border-radius: 30px;
+    }
+  }
   
   .button {
     min-height: 15vh;
@@ -24,6 +31,12 @@
     font-size: 48px;
     color: $White;
     padding: 20px;
+  }
+
+  @media (min-width:768px){
+    .button{
+      min-height: 25vh;
+    }
   }
   
   .button span {
@@ -47,4 +60,11 @@
       width: 70%;
       text-align: center;
       margin-bottom: 20px;
+    }
+    
+    @media (min-width:768px){
+      .result-graph p{
+        width: 50%;
+        margin-bottom: initial;
+    }
   }

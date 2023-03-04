@@ -1,13 +1,24 @@
 .summary{
     height: 60vh;
     display: grid;
-    padding: 25px;
+    padding: 35px;
     gap: 30px;
 }
+
+
 
 .summary h2{
     color: $DarkGrayBlue;
 
+}
+
+@media(min-width: 768px){
+    .summary{
+        gap: 15px;
+    }
+    .summary h2{
+        margin-top: 20px;
+    }
 }
 
 .stat{
@@ -49,4 +60,14 @@
     color: $CobaltBlue;
     background-color: hsl(234 85% 45% / .1);
 
+}
+
+.continue-button{
+    @include fuente(700);
+    padding: 15px;
+    border-radius: 25px;
+    border-style: none;
+    background-color: $DarkGrayBlue;
+    color: $White;
+    font-size: 18px;
 }

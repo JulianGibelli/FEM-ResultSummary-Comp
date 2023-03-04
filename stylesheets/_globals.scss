@@ -11,12 +11,22 @@ body {
 .main-container {
   width: fit-content;
   height: 100vh;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
   .main-container {
+    height: auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(400px, 1fr));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    box-shadow: 10px 10px 69px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 69px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 69px 0px rgba(0, 0, 0, 0.75);
   }
 }
 
